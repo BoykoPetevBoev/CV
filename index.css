@@ -2,14 +2,13 @@
 body {
   background-color: white;
   color: black;
-  text-align: center;
   font-family: sans-serif;
 }
 
 .main {
-  max-width: 1000px;
-  height: 1500px;
-  box-shadow: 0 0 5px;
+  max-width: 794px;
+  height: 1123px;
+  /* box-shadow: 0 0 5px; */
   margin: 0 auto;
   background-color: white;
 }
@@ -26,27 +25,20 @@ body {
   text-transform: uppercase;
   color: #dbff15;
   display: inline-block;
-  padding-left: 60px;
+  padding-left: 281px;
+  padding-top: 16px;
   transform: rotate(-5deg);
-  font-size: 50px;
-}
-
-.header-second {
-  height: 100px;
-  border-bottom: solid 1px;
+  font-size: 40px;
 }
 
 .header-second img {
   display: inline-block;
-  height: 200px;
-  width: 200px;
+  height: 190px;
+  width: 190px;
   margin-top: -100px;
-  /* border-bottom: solid 5px rgb(0, 10, 39); */
-  /* border-top: solid 10px #dbff15; */
-  /* border-radius: 10px 10px 0 0; */
   position: absolute;
-  margin-left: -450px;
-  box-shadow: 0 0 10px 0px;
+  margin-left: 25px;
+  box-shadow: 0 0 5px;
 }
 
 .header-second .dev {
@@ -65,18 +57,46 @@ body {
   display: inline-block;
 }
 
-.info {
-  height: 80%;
+.important {
+  height: 63%;
   background-color: #dbff15;
-  width: 200px;
-  margin-left: 50px;
-  box-shadow: 0 0 10px;
+  color: #000a27;
+  width: 29%;
+  box-shadow: 0 0 5px;
+  display: inline-block;
+  margin-top: -34px;
+  padding: 150px 25px;
 }
 
-.footer-first {
-  background-color: rgb(0, 10, 39);
-  height: 150px;
-  box-shadow: inset 0px 0px 10px;
-  clip-path: polygon(0 60%, 100% 0, 100% 100%, 0% 100%);
-  margin-top: -300px;
+.important h4 {
+  border-bottom: solid 1px rgb(0, 10, 39);
 }
+.important>div{
+  margin-bottom: 100px;
+}
+
+.ingormation-holder {
+  display: inline-block;
+  width: 480;
+  height: 940px;
+  border: solid 3px #dbff15;
+  /* border-right: none; */
+  float: right;
+}
+
+.ingormation-holder div {
+  width: 580px;
+  height: 235px;
+  text-align: justify;
+}
+
+.ingormation-holder div:nth-child(odd) {
+  width: 440px;
+  padding: 0 20px;
+}
+.ingormation-holder div:nth-child(even) {
+  background-color: #000a27;
+  margin-left: -140px;
+}
+
+
