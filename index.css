@@ -1,12 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+@import "https://use.fontawesome.com/releases/v5.10.2/css/all.css";
+@import './images/city.jpg';
+
+/* #83b541 */
+/* #dbff15 */
+
 body {
   background-color: white;
-  color: black;
+  color: white;
   font-family: sans-serif;
 }
 
 .main {
-  max-width: 794px;
+  width: 794px;
   height: 1123px;
   /* box-shadow: 0 0 5px; */
   margin: 0 auto;
@@ -15,37 +21,63 @@ body {
 
 .header-first {
   background-color: rgb(0, 10, 39);
-  height: 150px;
-  box-shadow: inset 0px 0px 10px;
-  clip-path: polygon(0 0, 100% 0, 100% 40%, 0% 100%);
+  background-color: white;
+  height: 200px;
+  box-shadow: 0px 0px 10px 10px;
+  clip-path: polygon(0 0, 100% 0, 100% 20%, 0% 100%);
+  /* background-image: url("images/city.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 0px -90px; */
+  /* background: rgb(34,38,49);
+  background: radial-gradient(circle, rgba(34,38,49,1) 0%, rgba(0,0,0,1) 100%); */
 }
+
+/* .image-effect {
+  height: 30px;
+  width: 60px;
+  background-color: ##83b541;
+  margin-top: -42px;
+} */
 
 .header-first h1 {
   font-family: 'Orbitron', sans-serif;
   text-transform: uppercase;
-  color: #dbff15;
-  display: inline-block;
-  padding-left: 281px;
-  padding-top: 16px;
-  transform: rotate(-5deg);
+  color: rgb(0, 10, 39);
+  background-color: white;
+  padding-left: 226px;
+  padding-top: 3px;
   font-size: 40px;
+  margin-left: 30px;
+}
+.header-first p {
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+  background-color: #000a27;
+  width: 608px;
+  height: 30pc;
+  /* transform: rotate(-10deg); */
+  margin-left: 27px;
+  margin-top: 30px;
 }
 
 .header-second img {
-  display: inline-block;
-  height: 190px;
-  width: 190px;
-  margin-top: -100px;
+  height: 250px;
+  width: 185px;
+  margin-top: -201px;
   position: absolute;
-  margin-left: 25px;
-  box-shadow: 0 0 5px;
+  margin-left: 22px;
+  z-index: 1;
+  color: white;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+  box-shadow: 0 0 10px;
 }
 
 .header-second .dev {
   width: 80%;
   float: right;
-  margin-top: -100px;
-  background-color: #dbff15;
+  margin-top: -159px;
+  /* background-color: ##83b541; */
   text-align: right;
   padding-right: 20px;
   vertical-align: text-bottom;
@@ -57,31 +89,70 @@ body {
   display: inline-block;
 }
 
-.important {
-  height: 63%;
-  background-color: #dbff15;
-  color: #000a27;
-  width: 29%;
-  box-shadow: 0 0 5px;
-  display: inline-block;
-  margin-top: -34px;
-  padding: 150px 25px;
+.contact {
+  width: 500px;
+  font-size: small;
+}
+.contact h4 {
+  width: 215px;
+}
+.contact p , .contact a{
+  /* text-align: left; */
+  padding-left: 10px;  
+  width: 200px;
+  margin: 3px;
 }
 
-.important h4 {
+.aside {
+  height: 582px;
+  background-color: #dbff15;
+  background-color: #c6e6ff;
+  background-color: #000a27;
+  color: #fff;
+  width: 183px;
+  /* box-shadow: 0 0 5px; */
+  display: inline-block;
+  margin-top: -44px;
+  padding: 93px 25px;
+  clip-path: polygon(0 6.2%, 100% 0, 100% 100%, 0% 100%);
+  position: absolute;
+  z-index: 0;
+}
+.aside i,.aside p {
+  display: inline-block;
+}
+.aside h4 {
   border-bottom: solid 1px rgb(0, 10, 39);
 }
-.important>div{
+.aside>div{
   margin-bottom: 100px;
+}
+
+.aside h1 {
+  font-family: 'Orbitron', sans-serif;
+  text-transform: uppercase;
+  position: absolute;
+  font-size: 85px;
+  /* transform: rotate(-11.3deg); */
+  color: #000a27;
+  margin-top: -85px;
+  margin-left: -26px;
+  opacity: 0.1;
+  letter-spacing: 7px;
 }
 
 .ingormation-holder {
   display: inline-block;
-  width: 480;
+  width: 552px;
   height: 940px;
-  border: solid 3px #dbff15;
+  border: solid 3px #000a27;
   /* border-right: none; */
   float: right;
+  margin-top: -158px;
+  margin-right: 0px;
+  clip-path: polygon(0 12%, 100% 0, 100% 100%, 0% 100%);
+  background-color: #000a27;
+
 }
 
 .ingormation-holder div {
@@ -95,8 +166,8 @@ body {
   padding: 0 20px;
 }
 .ingormation-holder div:nth-child(even) {
-  background-color: #000a27;
-  margin-left: -140px;
+  background-color: white;
+  margin-left: -5px;
 }
 
 
