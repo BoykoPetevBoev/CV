@@ -123,18 +123,69 @@ footer {
   font-size: small;
 }
 
-.contact div, .interest div {
+.contact div {
   height: 30px;
 }
 
-.contact p, .contact a, .interest p {
+.contact p, .contact a {
+  margin: 0;
   position: relative;
   text-align: left;
   padding-left: 10px;
   width: 200px;
-  margin: 3px;
   color: #fff;
   text-decoration: none;
+}
+
+.interest div, .language div {
+  font-size: small;
+  /* background-color: #053160; */
+  margin-bottom: 10px;
+  /* border: solid 1px #e0044b; */
+  /* border-bottom: solid 1px #e0044b; */
+  /* background: rgb(224, 4, 75);
+  background: linear-gradient(32deg, rgba(224, 4, 75, 1) 59%, rgba(5, 49, 96, 0) 60%); */
+
+  box-shadow: 0 0 5px black;
+}
+
+.interest div:nth-child(2), .language div:nth-child(3) {
+  background: rgb(224,4,75);
+  background: linear-gradient(150deg, rgba(224,4,75,1) 49%, rgba(5,49,96,0) 50%);
+}
+
+.interest div:nth-child(3), .language div:nth-child(2) {
+  background: rgb(224, 4, 75);
+  background: linear-gradient(150deg, rgb(185, 6, 63) 69%, rgba(5, 49, 96, 0) 70%);
+}
+
+.interest div:nth-child(4) {
+  background: rgb(224, 4, 75);
+  background: linear-gradient(150deg, rgb(153, 2, 50) 59%, rgba(5, 49, 96, 0) 60%);
+}
+
+.interest div:nth-child(5) {
+  background: rgb(224, 4, 75);
+  background: linear-gradient(150deg, rgb(117, 2, 39) 79%, rgba(5, 49, 96, 0) 80%);
+}
+
+.language div:nth-child(2) {
+  background: rgb(224, 4, 75);
+  background: linear-gradient(150deg, rgba(224,4,75,1) 69%, rgba(5, 49, 96, 0) 70%);
+}
+.language div:nth-child(3) {
+  background: rgb(224,4,75);
+  background: linear-gradient(150deg, rgb(185, 6, 63) 49%, rgba(5,49,96,0) 50%);
+}
+
+.interest p, .language p {
+  margin: 0px;
+  width: 100px;
+  color: #000;
+  vertical-align: middle;
+  /* background-color: #e0044b; */
+  padding: 2px 7px;
+  font-weight: bold;
 }
 
 .aside {
@@ -187,20 +238,24 @@ footer {
   height: 940px;
   float: right;
   margin-top: -100px;
+  padding: 20px;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: white;
+  border-top: 4px solid #e0044b;
 }
 
 .section h4 {
-  margin: 10px;
-  margin-bottom: 10px;
-  position: relative;
-  left: 7px;
-  width: 180px;
-  text-align: right;
   background-color: #fff;
   color: #e0044b;
   text-align: center;
-  border-top: solid 1px #e0044b;
-  border-bottom: solid 1px #e0044b;
+  /* border-top: solid 1px #e0044b; */
+  /* border-bottom: solid 1px #e0044b; */
+  position: relative;
+  top: -10px;
+  display: inline-block;
+  padding: 0px 8px;
+  margin: 0;
 }
 
 .section .heding {
@@ -212,32 +267,37 @@ footer {
   font-size: 11px;
 }
 
-.about {
-  padding-top: 50px;
-  width: 540px;
-  background-color: white;
-  color: #000a27;
-  text-align: justify;
-  padding: 10px;
-}
-
-.education {
+.education, .about, .tu-gabrovo {
+  border: solid 1px #e0044b;
+  width: 100%;
   background-color: #fff;
-  color: #000;
-  height: 357px;
-  border: inset 0 0 10px;
-  width: 561px;
+  color: #000a27;
+  /* padding: 10px; */
   text-align: justify;
-  padding: 10px;
+  margin-bottom: 50px;
+  text-align: center;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
-.education div {
+.about {
+  margin-top: 30px;
+  /* max-height: 100px; */
+}
+
+.about p, .tu-gabrovo p{
+  text-align: justify;
+  position: relative;
+  /* top: -30px; */
+}
+
+/* .education div {
   height: 330px;
   background: #053160;
   background: radial-gradient(circle, #053160 0%, rgba(255, 255, 255, 1) 79%);
-}
+} */
 
-.education a {
+/* .education a {
   color: #000a27;
   text-decoration: none;
   display: inline-block;
@@ -254,7 +314,8 @@ footer {
   color: white;
   text-shadow: 0 0 4px black;
   /* border: solid 1px red; */
-}
+/* } */ 
+
 .about .title-holder {
   background-color: white;
   /* background-color: #aba2a2; */
