@@ -29,15 +29,16 @@ footer {
   width: 794px;
   height: 1123px;
   margin: auto;
-  border: solid 2px black;
+  /* border: solid 2px black; */
   /* background: rgb(224,4,75); */
   /* background: radial-gradient(circle, rgba(224,4,75,1) 0%, rgba(255,255,255,1) 25%); */
+  box-shadow: 0 0 10px grey;
 }
 
 .header {
   height: 200px;
-  background: #053160;
-  background: linear-gradient(90deg, #053160 0%, #000a27 100%);
+  /* background: #053160; */
+  /* background: linear-gradient(90deg, #053160 0%, #000a27 100%); */
   /* clip-path: polygon(0 0, 100% 0, 100% 20%, 0% 100%); */
 }
 
@@ -146,7 +147,7 @@ footer {
   /* background: rgb(224, 4, 75);
   background: linear-gradient(32deg, rgba(224, 4, 75, 1) 59%, rgba(5, 49, 96, 0) 60%); */
 
-  box-shadow: 0 0 5px black;
+  /* box-shadow: 0 0 5px black; */
 }
 
 .interest div:nth-child(2), .language div:nth-child(3) {
@@ -156,17 +157,17 @@ footer {
 
 .interest div:nth-child(3), .language div:nth-child(2) {
   background: rgb(224, 4, 75);
-  background: linear-gradient(150deg, rgb(185, 6, 63) 69%, rgba(5, 49, 96, 0) 70%);
+  background: linear-gradient(150deg, rgba(224,4,75,1) 69%, rgba(5, 49, 96, 0) 70%);
 }
 
 .interest div:nth-child(4) {
   background: rgb(224, 4, 75);
-  background: linear-gradient(150deg, rgb(153, 2, 50) 59%, rgba(5, 49, 96, 0) 60%);
+  background: linear-gradient(150deg, rgba(224,4,75,1) 59%, rgba(5, 49, 96, 0) 60%);
 }
 
 .interest div:nth-child(5) {
   background: rgb(224, 4, 75);
-  background: linear-gradient(150deg, rgb(117, 2, 39) 79%, rgba(5, 49, 96, 0) 80%);
+  background: linear-gradient(150deg, rgba(224,4,75,1) 79%, rgba(5, 49, 96, 0) 80%);
 }
 
 .language div:nth-child(2) {
@@ -175,7 +176,7 @@ footer {
 }
 .language div:nth-child(3) {
   background: rgb(224,4,75);
-  background: linear-gradient(150deg, rgb(185, 6, 63) 49%, rgba(5,49,96,0) 50%);
+  background: linear-gradient(150deg, rgba(224,4,75,1) 49%, rgba(5,49,96,0) 50%);
 }
 
 .interest p, .language p {
@@ -242,7 +243,7 @@ footer {
   text-align: center;
   box-sizing: border-box;
   background-color: white;
-  border-top: 4px solid #e0044b;
+  /* border-top: 4px solid #e0044b; */
 }
 
 .section h4 {
@@ -268,7 +269,7 @@ footer {
 }
 
 .education, .about, .tu-gabrovo {
-  border: solid 1px #e0044b;
+  /* border: solid 1px #e0044b; */
   width: 100%;
   background-color: #fff;
   color: #000a27;
