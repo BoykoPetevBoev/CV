@@ -1,18 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
 @import "https://use.fontawesome.com/releases/v5.10.2/css/all.css";
 @import './images/city.jpg';
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 :root {
   --dark: #02173a;
   --bright: #e0044b;
+  /* --dark:  #042f5d; */
 }
 
 body {
   background-color: white;
-  font-family: sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Calibri, 'Trebuchet MS', sans-serif; */
 }
 
-h1, h2, h3, h4, h5 {
-  font-family: 'Orbitron', sans-serif;
+h1, h2, h3, h4, h5, .heading {
+  font-family: Arial, sans-serif;
   text-transform: uppercase;
   text-align: center;
   color: var(--bright);
@@ -29,12 +32,19 @@ h1, h2, h3, h4, h5 {
 
 .aside {
   min-height: 100%;
-  width: 188px;
+  width: 200px;
   padding: 0 25px;
   color: #fff;
   background: #053160;
   background: linear-gradient(180deg, #053160 0%, var(--dark) 100%);
   box-shadow: 0 0 10px black;
+}
+
+.aside .flex {
+  min-height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .aside .image-holder img {
@@ -47,8 +57,15 @@ h1, h2, h3, h4, h5 {
   font-size: 13px;
 }
 
-.aside .contact div {
+.aside .contact div, .interest div, .language div {
   height: 30px;
+  /* display: flex; */
+  justify-content: space-between;
+}
+
+.aside .hobbies i {
+  font-size: 20px;
+  padding-left: 15px;
 }
 
 .aside i, .aside p {
@@ -70,45 +87,14 @@ h1, h2, h3, h4, h5 {
   text-decoration: none;
 }
 
-.interest div, .language div {
-  margin-bottom: 10px;
-}
-
 .interest p, .language p {
   margin: 0px;
-  color: #000;
   padding: 2px 7px;
-  font-weight: bold;
 }
 
-.interest div:nth-child(2), .language div:nth-child(3) {
-  background: var(--bright);
-  background: linear-gradient(150deg, var(--bright) 49%, rgba(5, 49, 96, 0) 50%);
-}
-
-.interest div:nth-child(3), .language div:nth-child(2) {
-  background: var(--bright);
-  background: linear-gradient(150deg, var(--bright) 69%, rgba(5, 49, 96, 0) 70%);
-}
-
-.interest div:nth-child(4) {
-  background: var(--bright);
-  background: linear-gradient(150deg, var(--bright) 59%, rgba(5, 49, 96, 0) 60%);
-}
-
-.interest div:nth-child(5) {
-  background: var(--bright);
-  background: linear-gradient(150deg, var(--bright) 79%, rgba(5, 49, 96, 0) 80%);
-}
-
-.language div:nth-child(2) {
-  background: var(--bright);
-  background: linear-gradient(150deg, var(--bright) 69%, rgba(5, 49, 96, 0) 70%);
-}
-
-.language div:nth-child(3) {
-  background: var(--bright);
-  background: linear-gradient(150deg, var(--bright) 49%, rgba(5, 49, 96, 0) 50%);
+.interest div {
+  background-color: none;
+  /* border-left: solid 5px var(--bright); */
 }
 
 .section {
@@ -116,7 +102,43 @@ h1, h2, h3, h4, h5 {
   height: 100%;
   padding: 20px;
   box-sizing: border-box;
-  font-size: 15px;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  color: var(--dark);
+}
+
+.section .education-holder {
+  text-align: center;
+}
+
+.section .name, .section .role {
+  margin: 0;
+  text-transform: uppercase;
+  color: var(--dark);
+  text-align: center;
+  margin: 10px 0;
+}
+
+/* .name-holder {
+  margin-bottom: 50px;
+} */
+
+.section .name-holder {
+  box-shadow: 0 0 10px #e1e1e1;
+  text-shadow: 0 0 10px #e1e1e1;
+  /* height: 170px; */
+}
+
+.section .name {
+  font-size: 50px;
+  font-weight: 100;
+  margin: 20px;
+}
+
+.section .role {
+  margin: 20px;
+  /* font-size: 16px; */
 }
 
 .section a {
@@ -124,18 +146,57 @@ h1, h2, h3, h4, h5 {
   color: var(--dark);
 }
 
-.section h4 {
-  background-color: var(--dark);
-  color: #fff;
+.section h4, .section .heading {
+  color: white;
+  background: #042f5d;
+  /* background: linear-gradient(30deg, rgba(255,255,255,1) 20%, rgba(5,46,91,1) 21%, rgba(21,59,102,1) 79%, rgba(255,255,255,1) 80%); */
+  /* border-bottom: 1px solid; */
+  /* border-top: 1px solid; */
+  width: 270px;
+  margin: 0;
+  padding: 5px 0;
+  text-align: center;
+  margin-left: 267px;
+  box-shadow: 0 0 10px #b1b1b1
 }
 
-.about p {
-  text-align: justify;
+
+.about-holder, .name-holder {
+  margin-bottom: 20px;
+}
+
+/* .about-holder h4 {
+  text-align: center;
+} */
+
+.section p {
+  text-align: left;
+  letter-spacing: 1px;
+  line-height: 18px
 }
 
 .courses {
-  color: var(--dark);
+  /* color: var(--dark); */
   text-align: left;
+}
+
+.line {
+  min-height: 100px;
+  min-width: 2px;
+  width: 2px;
+  background-color: var(--dark);
+  margin: 0 20px;
+  /* display: flex; */
+  /* justify-content: flex-end; */
+}
+
+.line div {
+  /* width: 10px; */
+  /* height: 10px; */
+  /* background-color: #02173a; */
+  /* position: relative; */
+  /* left: -4px; */
+  /* border-radius: 10px; */
 }
 
 .section ul {
@@ -146,19 +207,32 @@ h1, h2, h3, h4, h5 {
 .section ul li {
   display: flex;
   /* justify-content: center; */
+  width: 100%;
 }
 
-.section ul li div {
-  min-width: 130px;
-}
-
-.section ul li div:first-child {
-  border-right: solid 1px var(--dark);
-  margin-right: 15px;
-  padding-right: 15px;
+.section ul li .right {
   text-align: right;
+}
+
+.section ul li>div:first-child {
+  /* margin-right: 15px;
+  padding-right: 15px; */
+  /* text-align: center; */
+  min-width: 130px;
+  /* margin-right: 20px; */
+}
+
+.section ul li div:nth-child(2) {
+  /* border-left: solid 2px var(--dark); */
+  /* padding-left: 30px; */
 }
 
 .bold {
   font-weight: bold;
+}
+
+.about-holder p{
+  text-align:justify;
+  /* letter-spacing: 1px;
+  line-height: 18px */
 }
